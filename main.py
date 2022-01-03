@@ -62,7 +62,7 @@ class Upload:
 
             params = {'path': str(user_id) + '/' + str(photo_likes), 'url': photo_data[0]}
             res = requests.post(url, headers=headers, params=params).json()
-
+        print('Фотографии успешно загружены на Яндекс.Диск')
 
 
 upload_client = Upload(TOKEN_VK, '5.131', TOKEN_DISK)
